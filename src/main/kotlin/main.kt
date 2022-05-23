@@ -1,8 +1,10 @@
 fun main() {
-    var likes: Int = 41
-    val onePeople: String = "человеку"
-    val manyPeople: String = "людям"
-    if (likes == 1 || likes % 10 == 1)
-        println("Понравилось $likes $onePeople")
-    else println("Понравилось $likes $manyPeople")
+    var likes: Int = 141
+    var text: String
+    if (likes % 10 == 1 && likes !== 11 && likes % 100 !== 11) {
+        text = "Понаравилось $likes  человеку"
+    } else {
+        text = "Понаравилось $likes  людям"
+    }
+    println(text)
 }
